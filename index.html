@@ -43,12 +43,13 @@
                         </div>
                     </div>
                     <div class="item-price">{{item.price | currency}}</div>
-                    <div class="details-container" style="width: {{370 - item.imageWidth}}px">
+                    <div class="details-container" style="width: {{item.detailsWidth}}px">
                         <div class="item-title"><span>{{item.title}}</span></div>
                         <div class="item-subtitle"><span>{{item.subtitle}}</span></div>
                         <div class="item-binding"><span>{{item.binding}}</span></div>
                         <div class="item-description" ng-bind-html="item.description"></div>
                     </div>
+                    <div class="show-more-link" ng-show="item.showShowMoreLink" ng-click="showMore($index)">show more</div>
                     <div class="spacer"></div>
                 </div>
             </div>

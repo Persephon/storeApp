@@ -31,6 +31,9 @@
     width: 400px;
     margin-right: 40px;
     margin-bottom: 56px;
+    overflow-y: hidden;
+}
+.item-container.expanded {
     overflow-y: auto;
 }
 
@@ -87,6 +90,7 @@
 
 .details-container {
     float: left;
+    position: relative;
 }
 
 .item-title {
@@ -115,4 +119,18 @@
     top: 0;
     right: 0;
     font-weight: bold;
+}
+
+.show-more-link {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    background: white;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: right;
+    color: blue;
+    text-decoration: underline;
 }
