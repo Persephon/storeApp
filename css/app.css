@@ -1,0 +1,19 @@
+﻿body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    min-width: 1025px;
+    overflow-x: auto;
+}
+
+.main-title {
+    font-family: cursive;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.main-container {
+    width: 90%;
+    margin-left: 58px;
+}
+
+.spacer {
+    clear: both;
+}

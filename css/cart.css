@@ -1,0 +1,118 @@
+[cart] {
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 215px;
+    background: white;
+    padding-left: 10px;
+}
+
+[cart].open {
+    height: 100%;
+    width: 375px;
+    border-left: 1px solid black;
+}
+
+[item-list].cart-open{
+    margin-right: 375px;
+}
+
+.cart-container, .cart-template {
+    height: 100%;
+}
+
+.cart-header {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0 20px;
+}
+
+.cart-title {
+    font-size: 13px;
+}
+
+.cart-subtitle {
+    font-size: 11px;
+}
+
+.cart-icon {
+    width: 40px;
+    float: left;
+}
+
+.close-link {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.close-icon {
+    vertical-align: text-bottom;
+}
+.cart-header-contents {
+    float: left;
+    margin-left: 15px;
+}
+.cart-item-list {
+    height: 79%;
+    overflow-y: auto;
+}
+
+.cart-item-container {
+    clear: both;
+    margin-top: 20px;
+}
+
+.cart-item-container * {
+    line-height: 50px;
+}
+.cart-item-image {
+    height: 50px;
+    max-width: 50px;
+    float: left;
+}
+
+.cart-item-price {
+    margin-right: 15px;
+    height: 50px;
+    float: right;
+}
+
+.cart-item-title {
+    margin-left:4px;
+    height: 50px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.remove-link {
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+.remove-icon {
+    height: 18px;
+    vertical-align: text-bottom;
+}
+
+.cart-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    padding: 10px 0;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 13px;
+    border-top: 1px solid black;
+}
+
+.footer-total {
+    float: right;
+}
