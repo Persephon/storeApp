@@ -2,7 +2,7 @@ storeApp .directive('cart', function () {
     return {
         require: "^ngController",
         restrict: "A",
-        template: '<div class="cart-template" ng-include src="\'cart-template\'"></div>',
+        templateUrl: "templates/cart.html",
         scope: {},
         link: function (scope, element, attr, controller) {
             scope.cartShown = false;

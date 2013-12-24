@@ -1,0 +1,24 @@
+<div class="cart-container">
+    <div class="cart-header" ng-click="toggleCart()">
+        <img class="cart-icon" src="images/shop-cart-black.png" />
+        <div class="cart-header-contents">
+            <div class="cart-title">Your Cart</div>
+            <div class="cart-subtitle">{{cartItems.length}} items totalling {{cartTotal | currency}}</div>
+            <a class="close-link" ng-show="cartShown"><img class="close-icon" src="images/close-icon.png" /></a>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <div ng-show="cartShown" class="cart-item-list">
+        <div ng-repeat="item in cartItems" class="cart-item-container">
+            <img class="cart-item-image" ng-src="{{item.image}}" />
+            <div class="cart-item-title"><span>{{item.title}}</span></div>
+            <a ng-click="removeFromCart(item)" class="remove-link"><img class="remove-icon" src="images/remove-icon.png" /></a>
+            <div class="cart-item-price"><span>{{item.price | currency}}</span></div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    <div ng-show="cartShown" class="cart-footer">
+        <span class="footer-title">Total</span>
+        <span class="footer-total">{{cartTotal | currency}}</span>
+    </div>
+</div>

@@ -2,7 +2,7 @@ storeApp.directive('itemList', function ($timeout) {
     return {
         require: "^ngController",
         restrict: "A",
-        template: '<div ng-include src="\'item-list-template\'"></div>',
+        templateUrl: "templates/itemList.html",
         link: function (scope, element, attr, controller) {
             scope.itemList = [];
             scope.loaderShown = true;

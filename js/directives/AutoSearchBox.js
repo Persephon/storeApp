@@ -18,7 +18,7 @@ storeApp .directive('autoSearchBox', function (ASWECommerceRepository, $timeout)
                 });
             };
 
-            scope.searchParam = "Movies";
+            scope.searchParam = "Book";
 
             refreshResults();
 
