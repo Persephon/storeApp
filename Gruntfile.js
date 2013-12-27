@@ -18,22 +18,13 @@ module.exports = function(grunt) {
           'js/build/Cart.min.js': ['js/directives/Cart.js'],
           'js/build/ItemList.min.js': ['js/directives/ItemList.js'],
           'js/build/AWSEcommerce.min.js': ['js/repositories/AWSEcommerceViaProxy.js'],
-          'js/build/app.min.js': ['js/app.js'],
+          'js/build/app.min.js': ['js/app.js']
         }
-        // src: [
-        //   'js/app.js', 
-        //   'js/repositories/AWSEcommerce.js',
-        //   'js/controllers/MasterController.js',
-        //   'js/directives/AutoSearchBox.js',
-        //   'js/directives/Cart.js',
-        //   'js/directives/ItemList.js'
-        // ],
-        // dest: 'js/build/storeApp.min.js'
       }
     },
     concat: {
       options: {
-        separator: ';',
+        separator: ';'
       },
       dist: {
         src: [
