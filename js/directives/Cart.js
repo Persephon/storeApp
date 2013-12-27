@@ -56,4 +56,4 @@ storeApp .directive('cart', function () {
             controller.setAddToCartMethod(addToCart);
         }
     };
-})
+});

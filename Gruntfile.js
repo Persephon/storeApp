@@ -5,28 +5,24 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+        separator: ';'
       },
       build: {
-        src: 'js/app.js',
-        dest: 'js/app.min.js'
+        src: [
+          'js/app.js', 
+          'js/controllers/*.js', 
+          'js/directives/*.js',
+          'js/repositories/*.js'
+        ],
+        dest: 'js/build/storeApp.min.js'
       }
     },
-    concat: {
-      options: {
-        separator: ';',
-      },
-      dist: {
-      src: ['js/directives/AutoSearchBox.js', 'js/directives/Cart.js', 'js/directives/ItemList.js'],
-        dest: 'js/directives/directives.js',
-      },
-    }, 
   });
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat'); 
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify', 'concat']);
+  grunt.registerTask('default', ['uglify']);
 
 };
