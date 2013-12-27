@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/item-list.css"/>
     <link rel="stylesheet" href="css/cart.css"/>
+    <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/ie8.css"/>
+    <![endif]-->
 </head>
 <body>
     <h1 class="main-title">Store</h1>
@@ -16,37 +18,40 @@
         <div cart></div>
     </div>
 
+    <!--[if lt IE 9]>
     <script src="js/polyfills/ie8.js"></script>
+    <![endif]-->
 
+    <!--[if lt IE 8]>
     <script src="js/lib/json3.min.js"></script>
-
-    <script src="js/lib/xml2json.js"></script>
+    <![endif]-->
 
     <!-- Use these for production -->
-<!--    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.compat.min.js"></script>-->
-    <!--
     <script src="js/lib/lodash.compat.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-sanitize.min.js"></script>
     <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/rollups/hmac-sha256.js"></script>
     <script src="http://crypto-js.googlecode.com/svn/tags/3.0.2/build/components/enc-base64.js"></script>
+    <script src="js/lib/xml2json.js"></script>
     <script src="js/build/storeApp.min.js"></script>
-    -->
     <!-- End: Use these for production -->
 
     <!-- Use these for development to get IDE autocompletion and syntax highlighting -->
+    <!--
+    <script src="js/lib/lodash.compat.js"></script>
     <script src="js/lib/angular.js"></script>
     <script src="js/lib/angular-sanitize.js"></script>
-    <script src="js/lib/lodash.compat.js"></script>
     <script src="js/lib/crypto-js/hmac-sha256.js"></script>
     <script src="js/lib/crypto-js/enc-base64.js"></script>
-
+    <script src="js/lib/xml2json.js"></script>
     <script src="js/app.js"></script>
     <script src="js/directives/AutoSearchBox.js"></script>
     <script src="js/directives/Cart.js"></script>
     <script src="js/directives/ItemList.js"></script>
     <script src="js/controllers/MasterController.js"></script>
     <script src="js/repositories/AWSEcommerceViaProxy.js"></script>
+    -->
     <!-- End: Use these for development... -->
+    
 </body>
 </html>
