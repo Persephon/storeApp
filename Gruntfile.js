@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
         mangle: {
-          except: ['$scope', '$timeout', 'ASWECommerceRepository']
+          except: ['$scope', '$timeout', 'ASWECommerceRepository', '$http', '$q', '$sce']
         }
       },
       build: {
